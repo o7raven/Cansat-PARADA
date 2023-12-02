@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Snopel</title>
+</head>
+<body>
+
+    <!--PRELOADER-->
+    <div id="preloader">
+
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!--PRELOADER-->
+    <!-- HOME -->
+    <header>
+        <div class="nav">
+            <a href="index.html"><h1>SNOPEL</h1></a>
+            <i class="ri-menu-line" onclick="showMenu()" id="burger"></i>
+            <div class="nav__links" id="navlinks">
+                <i class="ri-close-line" onclick="hideMenu()" id="close"></i>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#members">MEMBERS</a></li>
+                    <li><a href="" onclick="livePopup()">LIVE</a></li>
+                </ul>
+                </div>
+        </div>
+        <section>
+            <h1>Cansat</h1>
+            <p>This is the official site of Snopel Cansat Team</p>
+            <a href="#about">More</a>
+        </section>
+    </header>
+    <!-- HOME -->
+    <!-- ABOUT-->
+    <section class="about" id="about">
+        <div id="particles-js"></div>
+        <div>
+            <h1>About our team.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a corrupti ea asperiores minima natus. Nulla possimus fugit accusamus ab nostrum eligendi voluptate sunt perspiciatis delectus qui quod magni laudantium maiores, eius nesciunt omnis? 
+                <br><br>Iste, laborum excepturi repudiandae facere dicta neque consequuntur praesentium, aliquid placeat animi voluptate numquam odio expedita deserunt quis officia maiores quasi distinctio? Vel ex necessitatibus natus, doloremque reprehenderit sed fugit molestias minima veritatis animi et perferendis ad distinctio ipsam reiciendis consectetur aspernatur. Facere nam ex ab consectetur earum iusto, dolorem accusamus maiores reiciendis minima excepturi? Corporis cumque numquam sint perspiciatis recusandae dolorem consequuntur cupiditate. Ratione, quo nisi. Sint aliquid vero adipisci commodi, magnam eum placeat asperiores delectus cumque totam accusantium perspiciatis magni, quo quasi ratione repellat nam inventore vel incidunt dignissimos praesentium, maxime libero. 
+                <br><br>Perspiciatis veniam, natus nobis quibusdam, qui blanditiis nostrum sapiente enim possimus et architecto, perferendis doloribus tempore debitis necessitatibus ut magni nemo praesentium sint facilis ex. Animi earum voluptate numquam! Deleniti assumenda libero aut, ducimus, pariatur ipsum laudantium nulla a enim reprehenderit accusamus voluptate. Possimus modi perspiciatis officiis eaque tempora recusandae magni unde illum molestiae nostrum quisquam, optio quas, hic, ex aperiam maxime. Voluptate reiciendis quidem vero dolor voluptas quisquam voluptatibus? Eos, autem!</p>
+        </div>
+    </section>
+    <!-- ABOUT-->
+    <!-- MEMBERS-->
+    <section class="members__wrap" id="members">
+        <div class="members">
+        <h1>Members.</h1>
+        <div class="row">
+            <div class="col">
+                <a href="https://www.instagram.com/yakubiq" target="_blank">
+                    <img src="resources/imgs/blank.png" id="member_avatar">
+                    <h2>Jakub Farník</h2>
+                    <p>Programming, Web Design</p>
+                </a>
+            </div>
+            <div class="col">
+                <img src="resources/imgs/blank.png" id="member_avatar">
+                <h2>Daniel Kozel</h2>
+                <p>Prvni vec, Druha vec</p>
+            </div>
+            <div class="col">
+                <img src="resources/imgs/blank.png" id="member_avatar">
+                <h2>Adam Synek</h2>
+                <p>Prvni vec, Druha vec</p>
+            </div>
+            <div class="col">
+                <img src="resources/imgs/blank.png" id="member_avatar">
+                <h2>Honza Boháč</h2>
+                <p>prvni vec, druha vec</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- MEMBERS-->
+    <!-- FOOTER-->
+    <footer>
+        <h2>Contact</h2>
+        <div class="socials">
+            <a href="" onclick="iconPopup()"><i class="ri-instagram-line"></i></a>
+            <a href="" onclick="iconPopup()"><i class="ri-discord-fill"></i></a>
+            <a href="" onclick="iconPopup()"><i class="ri-mail-line"></i></a>
+        </div>
+        <p>Created by Jakub Farnik <script src="js/year.js"></script></p>
+    </footer>
+    <!-- FOOTER-->
+    <script type="text/javascript" src="js/bar.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/preloader.js"></script>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
