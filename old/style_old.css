@@ -1,0 +1,122 @@
+@font-face {
+  font-family: siteFont;
+  src: url('resources/fonts/Lato/Lato-Regular.ttf');
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #131313;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    
+    font-family: siteFont;
+
+    background-image: url('resources/imgs/bg2.jpg');
+    background-size: 1950px 1080px;
+    background-repeat: no-repeat;
+    color:#ffe4f2;
+    
+    display: grid;
+    justify-items: center;
+}
+
+.container{
+    width: 60%;
+    background-color: rgba(6, 0, 13, 0.666);
+    display: grid;
+}
+.header{
+    background-image: url('resources/imgs/fg.jpg');
+    padding: 2rem;
+}
+.header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header__buttons h2{
+    display: inline;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.nav{
+    text-align: center;
+    display: grid;
+}
+.nav ul{ 
+    gap: 1rem;
+    list-style: none;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+.nav ul li{
+    background-color: #000000d0;
+    border-radius: 3px;
+}
+.nav ul li:hover{
+    cursor: pointer;
+    background-color:rgba(36, 4, 65, 0.81);
+}
+.showcase{
+
+    display: grid;
+}
+.showcase ul{
+   /* margin: 0;*/
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+}
+.showcase ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    font-size: 1rem;
+    display: grid;
+    background-color: #06000df0;
+    justify-items: center;
+    align-items: center;
+}
+.about__container{
+    width: 90%;
+    height: auto;
+}
+.about__container p{
+    padding-top: 1rem;
+}
+.link {
+    color: rgb(117, 117, 228)
+}
+.link:hover{
+    color: rgb(90, 90, 232);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 950px){
+    .container{
+        width: 100%;
+    }
+    .nav ul{
+        grid-template-columns: 1fr;
+    }
+    .header{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+} 
