@@ -176,7 +176,7 @@ header div i{
 }
 
 .about{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.736) 0%, #00000000 50%, black 90%);
+    background-image: linear-gradient(rgb(0, 0, 0) 0%, #00000000 50%, black 90%);
     min-height: 100vh;
     padding: 100px 0;
     position: relative;
@@ -219,7 +219,7 @@ header div i{
     width: 70%;
 }
 .members__wrap{
-    background-image:linear-gradient(rgba(18, 2, 22, 0.65) , #000000 ), url('/resources/imgs/members.jpg');
+    background-image:linear-gradient(black,rgba(18, 2, 22, 0.65) , #000000 ), url('/resources/imgs/members.jpg');
     background-size: cover;
     background-position: 0;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ header div i{
 .row{
     margin-top: 2%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 5%;
 }
 .col{

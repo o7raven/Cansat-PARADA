@@ -15,16 +15,11 @@ app.get('/', (request, response) => {
     })
 });
 
-app.get('*' , (request, response) => {
-    readFile('./404.html', 'utf8', (err, html) =>{
-        if(err){
-            ise();
-        }
-        response.send(html);
-    }) 
+app.use((req, res) => {
+    res.status(404).sendFile(__dirname + '/public/404.html');
 });
 
-app.listen(process.env.PORT || 80, () => console.log('Site is running | http://localhost:80'));
+app.listen(process.env.PORT || 3443, () => console.log('Site is running | http://localhost:3443'));
 
 
 //sslServer.listen(3443, () => console.log("Secure server on port 3443 localhost:3443"));
