@@ -1,1 +1,1 @@
-# Website for the Snopel Cansat Team made in nodejs
+# Website for the Parada Cansat Team made in nodejs
