@@ -2,8 +2,10 @@
     font-family: oops;
     src: url('/resources/fonts/oops.otf');
 }
+
 *{
     font-family: oops;
+    overflow: hidden;
 }
 body{
     margin: 0;
