@@ -1,0 +1,10 @@
+{
+    "name": "Jakub Farník",
+    "roles": "Team management, Programming, Web Design",
+    "profile_picture": "../resources/imgs/blank.png",
+    "bio": "16 years old student from POJFM",
+    "socials": {
+      "linkedin": "linkedin_url",
+      "twitter": "twitter_url"
+    }
+  }
