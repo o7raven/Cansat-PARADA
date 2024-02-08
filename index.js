@@ -1,9 +1,10 @@
 const express = require('express');
-
+const helmet = require('helmet');
 const {readFile, readFileSync} = require('fs');
 const app = express();
-
+app.use(helmet());
 const PORT = 80;
+
 app.use(express.static('public'));
 app.get('/live', (request, response) => {
     readFile("./public/live.html", "utf8", (err, html) =>{

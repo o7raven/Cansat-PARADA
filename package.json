@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "helmet": "^7.1.0"
   },
   "name": "parada",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js"
   },
