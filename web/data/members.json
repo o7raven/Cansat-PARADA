@@ -2,7 +2,7 @@
   {
     "name": "Jakub Farník",
     "roles": "Team management, Programming, Web Design",
-    "profile_picture": ".web/resources/imgs/blank.png",
+    "profile_picture": "/assets/imgs/blank.png",
     "bio": "16 years old student from POJFM",
     "socials": {
       "linkedin": "linkedin_url",
@@ -12,7 +12,7 @@
   {
     "name": "Daniel Kozel",
     "roles": "Prvni vec, druha vec",
-    "profile_picture": ".web/resources/imgs/blank.png",
+    "profile_picture": "/assets/imgs/blank.png",
     "bio": "tady je tvuj popisek",
     "socials": {
       "linkedin": "linkedin_url",
