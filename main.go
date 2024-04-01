@@ -10,12 +10,10 @@ import (
 const ver = 2
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	indexPath := "web/index.html"
-	index, err := template.New(indexPath).ParseFiles(indexPath)
-	if err != nil {
-		log.Fatal("error opening opening indexPath: ", indexPath, err)
-	}
-	err = index.Execute(w, nil)
+	indexPath := "web/routes/index.html"
+	index := template.Must(template.ParseFiles(indexPath))
+
+	err := index.Execute(w, nil)
 	if err != nil {
 		log.Fatal("error executing the index template: ", err)
 	}
@@ -28,6 +26,8 @@ func main() {
 	defer logFile.Close()
 	log.SetOutput(logFile)
 	log.Printf("PARADA site v%d starting...", ver)
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("web/assets"))))
+	http.Handle("/modules/", http.StripPrefix("/modules/", http.FileServer(http.Dir("web/modules"))))
 	http.HandleFunc("/", rootHandler)
 	http.ListenAndServe(":80", nil)
 }
