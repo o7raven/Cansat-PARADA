@@ -9,6 +9,18 @@ import (
 
 const ver = 2
 
+type member struct {
+	name  string
+	roles string
+	pfp   string
+	bio   string
+	socials
+}
+type socials struct {
+	linkedin string
+	twitter  string
+}
+
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 	indexPath := "web/routes/index.html"
 	index := template.Must(template.ParseFiles(indexPath))
