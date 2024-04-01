@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"html/template"
 	"log"
 	"net/http"
@@ -10,22 +11,35 @@ import (
 const ver = 2
 
 type member struct {
-	name  string
-	roles string
-	pfp   string
-	bio   string
+	Name  string
+	Pfp   string
+	Roles string
+	Bio   string
 	socials
 }
 type socials struct {
-	linkedin string
-	twitter  string
+	Linkedin string
+	Twitter  string
+}
+
+func loadMembers() []member {
+	_members, err := os.ReadFile("web/data/members.json")
+	if err != nil {
+		log.Fatal("error trying to read members.json: ", err)
+	}
+	var members []member
+	err = json.Unmarshal(_members, &members)
+	if err != nil {
+		log.Fatal("func error json.Unmarshal(_members,&members): ", err)
+	}
+	return members
 }
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 	indexPath := "web/routes/index.html"
 	index := template.Must(template.ParseFiles(indexPath))
 
-	err := index.Execute(w, nil)
+	err := index.Execute(w, loadMembers())
 	if err != nil {
 		log.Fatal("error executing the index template: ", err)
 	}

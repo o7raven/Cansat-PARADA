@@ -1,22 +1,22 @@
 [
   {
-    "name": "Jakub Farník",
-    "roles": "Team management, Programming, Web Design",
-    "profile_picture": "/assets/imgs/blank.png",
-    "bio": "16 years old student from POJFM",
-    "socials": {
-      "linkedin": "linkedin_url",
-      "twitter": "twitter_url"
+    "Name": "Jakub Farník",
+    "Pfp": "/assets/imgs/blank.png",
+    "Roles": "Team management, Programming, Web Design",
+    "Bio": "16 years old student from POJFM",
+    "Socials": {
+      "Linkedin": "linkedin_url",
+      "Twitter": "twitter_url"
      }
   },
   {
-    "name": "Daniel Kozel",
-    "roles": "Prvni vec, druha vec",
-    "profile_picture": "/assets/imgs/blank.png",
-    "bio": "tady je tvuj popisek",
-    "socials": {
-      "linkedin": "linkedin_url",
-      "twitter": "twitter_url"
+    "Name": "Daniel Kozel",
+    "Pfp": "/assets/imgs/blank.png",
+    "Roles": "Prvni vec, druha vec",
+    "Bio": "tady je tvuj popisek",
+    "Socials": {
+      "Linkedin": "linkedin_url",
+      "Twitter": "twitter_url"
      }
   }
 

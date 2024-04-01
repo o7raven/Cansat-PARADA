@@ -57,26 +57,13 @@
         <div class="members">
         <h1>Members.</h1>
         <div class="row">
+            {{range .}}
             <div class="col">
-                <a href="https://www.instagram.com/yakubiq" target="_blank">
-                    <img src="/assets/imgs/blank.png" id="member_avatar">
-                    <h2>Jakub Farník</h2>
-                    <p>Programming, Web Design</p>
-                </a>
+                <img src={{.Pfp}} id="member_avatar">
+                <h2>{{.Name}}</h2>
+                <p>{{.Roles}}</p>
             </div>
-            <div class="col">
-                <a href="https://www.instagram.com/k0zl1s" target="_blank">
-                    <img src="/assets/imgs/blank.png" id="member_avatar">
-                    <h2>Daniel Kozel</h2>
-                    <p>3D Modeling, Team Captain</p>
-                </a>
-            </div>
-            <div class="col">
-                <img src="/assets/imgs/blank.png" id="member_avatar">
-                <h2>Adam Synek</h2>
-                <p>Arduino</p>
-            </div>
-
+            {{end}}
         </div>
     </div>
     </section>
