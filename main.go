@@ -81,11 +81,11 @@ func main() {
 	r.NotFoundHandler = http.HandlerFunc(notFound)
 	server := &http.Server{
 		Handler: r,
-		Addr:    "127.0.0.1:80",
+		Addr:    ":80",
 
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
-		IdleTimeout:  20 * time.Minute,
+		IdleTimeout:  20 * time.Second,
 	}
 	log.Fatal(server.ListenAndServe())
 }
