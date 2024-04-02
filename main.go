@@ -6,6 +6,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/gorilla/mux"
 )
 
 const ver = 2
@@ -51,9 +53,11 @@ func main() {
 	}
 	defer logFile.Close()
 	log.SetOutput(logFile)
+
 	log.Printf("PARADA site v%d starting...", ver)
-	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("web/assets"))))
-	http.Handle("/modules/", http.StripPrefix("/modules/", http.FileServer(http.Dir("web/modules"))))
-	http.HandleFunc("/", rootHandler)
-	http.ListenAndServe(":80", nil)
+	r := mux.NewRouter()
+	r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("web/assets"))))
+	r.PathPrefix("/modules/").Handler(http.StripPrefix("/modules/", http.FileServer(http.Dir("web/modules"))))
+	r.HandleFunc("/", rootHandler)
+	http.ListenAndServe(":80", r)
 }
