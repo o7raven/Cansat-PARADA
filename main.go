@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/gorilla/mux"
 )
@@ -46,6 +47,23 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 		log.Fatal("error executing the index template: ", err)
 	}
 }
+func livePreviewHandler(w http.ResponseWriter, r *http.Request) {
+	livePath := "web/routes/live.html"
+	live := template.Must(template.ParseFiles(livePath))
+
+	err := live.Execute(w, nil)
+	if err != nil {
+		log.Fatal("error executing the index template: ", err)
+	}
+}
+func notFound(w http.ResponseWriter, r *http.Request) {
+	notFoundPath := "web/routes/404.html"
+	notFound := template.Must(template.ParseFiles(notFoundPath))
+	err := notFound.Execute(w, nil)
+	if err != nil {
+		log.Fatal("error executing the notFound template: ", err)
+	}
+}
 func main() {
 	logFile, err := os.OpenFile("logs.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
@@ -59,5 +77,15 @@ func main() {
 	r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("web/assets"))))
 	r.PathPrefix("/modules/").Handler(http.StripPrefix("/modules/", http.FileServer(http.Dir("web/modules"))))
 	r.HandleFunc("/", rootHandler)
-	http.ListenAndServe(":80", r)
+	r.HandleFunc("/live", livePreviewHandler)
+	r.NotFoundHandler = http.HandlerFunc(notFound)
+	server := &http.Server{
+		Handler: r,
+		Addr:    "127.0.0.1:80",
+
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
+		IdleTimeout:  20 * time.Minute,
+	}
+	log.Fatal(server.ListenAndServe())
 }
