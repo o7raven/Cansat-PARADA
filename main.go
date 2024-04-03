@@ -26,7 +26,7 @@ type socials struct {
 }
 
 func loadMembers() []member {
-	_members, err := os.ReadFile("web/data/members.json")
+	_members, err := os.ReadFile("data/members.json")
 	if err != nil {
 		log.Fatal("error trying to read members.json: ", err)
 	}
