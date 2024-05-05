@@ -22,7 +22,6 @@ type member struct {
 }
 type socials struct {
 	Linkedin string
-	Twitter  string
 }
 
 func loadMembers() []member {
