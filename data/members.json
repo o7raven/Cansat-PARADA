@@ -2,21 +2,19 @@
   {
     "Name": "Jakub Farník",
     "Pfp": "/assets/imgs/blank.png",
-    "Roles": "Team management, Coding, Web design",
+    "Roles": "Team leader, Coding, Web and Protocol Design",
     "Bio": "16 years old student from POJFM",
     "Socials": {
-      "Linkedin": "linkedin_url",
-      "Twitter": "twitter_url"
+      "Linkedin": "linkedin_url"
      }
   },
   {
     "Name": "Daniel Kozel",
     "Pfp": "/assets/imgs/blank.png",
-    "Roles": "3D design",
-    "Bio": "15 years old student from POJFM",
+    "Roles": "3D design, Parachute Design, Engineering, Social Media Management",
+    "Bio": "16 years old student from POJFM",
     "Socials": {
-      "Linkedin": "linkedin_url",
-      "Twitter": "twitter_url"
+      "Linkedin": "linkedin_url"
      }
   }
 
