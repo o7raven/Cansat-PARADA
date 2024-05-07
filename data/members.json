@@ -16,6 +16,15 @@
     "Socials": {
       "Linkedin": "linkedin_url"
      }
+  },
+  {
+    "Name": "Adam Synek",
+    "Pfp": "/assets/imgs/blank.png",
+    "Roles": "Coding, Circuit design",
+    "Bio": "15 years old elementary school student from 8. ZŠ",
+    "Socials": {
+      "Linkedin": "linkedin_url"
+    }
   }
 
 ]
