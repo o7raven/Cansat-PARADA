@@ -225,6 +225,10 @@ header div i{
 #member_avatar{
     width: 70%;
 }
+.bioClr:hover{
+    transition: .2s ease-in-out;
+    color: rgb(194, 0, 194);
+}
 .members__wrap{
     background-image:linear-gradient(black,rgba(18, 2, 22, 0.65) , #000000 ), url('/assets/imgs/members.jpg');
     background-size: cover;
@@ -364,4 +368,43 @@ footer h2{
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* SPONSORS */
+
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.sponsors img{
+    width: 50%;
+}
+#pojec{
+    width: 20%;
+}
+@media (max-width:1000px){
+    .sponsors img{
+        width: 40%;
+    }
+    .sponsors img:nth-child(3){
+        width:90%;
+    }
+}
+@media (max-width:460px){
+    .sponsors{
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+    .sponsors img{
+        width: 20%;
+        padding: 1rem;
+    }
+    .sponsors img:nth-child(3){
+        width:80%;
+    }
 }

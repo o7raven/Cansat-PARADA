@@ -30,6 +30,7 @@
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#members">MEMBERS</a></li>
+                    <li><a href="#footer">SPONSORS</a></li>
                     <li><a href="/live">LIVE</a></li>
                 </ul>
                 </div>
@@ -61,6 +62,10 @@
                 <img src={{.Pfp}} id="member_avatar">
                 <h2>{{.Name}}</h2>
                 <p>{{.Roles}}</p>
+                <br>
+                <div class="bioClr">
+                    <p>{{.Bio}}</p>
+                </div>
             </div>
             {{end}}
         </div>
@@ -68,10 +73,16 @@
     </section>
     <!-- MEMBERS-->
     <!-- FOOTER-->
-    <footer>
+    <footer id="footer">
+        <div class="sponsors">
+            <a href="http://www.elektropenco.cz" target="_blank"><img src="/assets/imgs/penco.png" alt="penco"></a>
+            <a href="https://pojfm.cz" target="_blank"><img src="/assets/imgs/pojka.png" alt="pojfm <3" id="pojec"></a>
+            <a href="https://archive.veluxfoundations.dk/en" target="_blank"><img src="/assets/imgs/velux.png" alt="velux"></a>
+        </div>
         <h2>Contact</h2>
+
         <div class="socials">
-            <a href="" onclick="iconPopup()"><i class="ri-instagram-line"></i></a>
+            <a href="https://instagram.com/paradaspace" target="_blank"><i class="ri-instagram-line"></i></a>
             <!-- <a href="https://discord.gg/ZVXyKGw53T" target="_blank"><i class="ri-discord-fill"></i></a> -->
             <a href="" onclick="iconPopup()"><i class="ri-mail-line"></i></a>
         </div>

@@ -1,5 +1,5 @@
 function iconPopup(){
-    alert("Socialni site jeste nejsou nastavene")
+    alert("Email jeste neni nastaveny")
 }
 
 function livePopup(){
