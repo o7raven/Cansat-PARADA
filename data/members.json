@@ -2,8 +2,8 @@
   {
     "Name": "Jakub Farník",
     "Pfp": "/assets/imgs/blank.png",
-    "Roles": "Team leader, Coding, Web and Protocol Design",
-    "Bio": "16 years old student from POJFM",
+    "Roles": "Team leader, Coding, Web and Circuit Design, Telemetry, Document writing, Presentations",
+    "Bio": "I'm a 16 years old IT student who's interested in computer science, cybersecurity and linux ;)",
     "Socials": {
       "Linkedin": "linkedin_url"
      }
@@ -11,8 +11,8 @@
   {
     "Name": "Daniel Kozel",
     "Pfp": "/assets/imgs/blank.png",
-    "Roles": "3D design, Parachute Design, Engineering, Social Media Management",
-    "Bio": "16 years old student from POJFM",
+    "Roles": "3D design, Parachute Design, Engineering, Social Media Management, Document writing, Presentations",
+    "Bio": "Hey, I'm a 16 years old engineering student from POJ who really enjoys manual work where skill is required",
     "Socials": {
       "Linkedin": "linkedin_url"
      }
@@ -21,7 +21,7 @@
     "Name": "Adam Synek",
     "Pfp": "/assets/imgs/blank.png",
     "Roles": "Coding, Circuit design",
-    "Bio": "15 years old elementary school student from 8. ZŠ",
+    "Bio": "Embedded programming is something I was always curious about and sharpening my skills is one of my main goals!",
     "Socials": {
       "Linkedin": "linkedin_url"
     }
